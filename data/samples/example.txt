@@ -1,0 +1,18 @@
+Hello, World!
+
+This is an example file for the Awesome Chain framework.
+It demonstrates file reading capabilities.
+
+Some interesting facts:
+- LangChain is an open-source framework
+- It was created by Harrison Chase
+- LangChain helps build applications with LLMs
+
+Key features:
+1. Memory management
+2. Tool usage
+3. Agent systems
+4. Document loaders
+5. Vector stores
+
+Thank you for using Awesome Chain!

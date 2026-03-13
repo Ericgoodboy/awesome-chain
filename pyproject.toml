@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awesome-chain"
+version = "1.0.0"
+description = "A LangChain-based framework for autonomous AI agents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Awesome Team"}
+]
+keywords = ["langchain", "ai", "llm", "agents", "tools"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/awesome-chain"
+Repository = "https://github.com/yourusername/awesome-chain"
+Issues = "https://github.com/yourusername/awesome-chain/issues"
+
+[tool.setuptools]
+packages = ["src", "src.awesome_chain", "src.awesome_chain.core", "src.awesome_chain.tools", "src.awesome_chain.skills", "src.awesome_chain.skills.examples"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true

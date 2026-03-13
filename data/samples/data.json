@@ -1,0 +1,17 @@
+{
+  "name": "awesome-chain",
+  "version": "1.0.0",
+  "description": "A LangChain-based framework",
+  "features": [
+    "Tool calling",
+    "File reading",
+    "Skill invocation",
+    "Memory management",
+    "Agent orchestration"
+  ],
+  "stats": {
+    "lines_of_code": 1500,
+    "files": 20,
+    "contributors": 5
+  }
+}

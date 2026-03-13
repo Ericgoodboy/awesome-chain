@@ -1,0 +1,3 @@
+"""
+Tests for Awesome Chain.
+"""

@@ -1,0 +1,47 @@
+
+=== 结构体 Crt 及其依赖定义 ===
+
+// Crt
+type Crt struct {
+	Asset
+	Region
+	CrtInfo
+}
+
+
+// Asset
+// Asset 资产
+type Asset struct {
+	TenantId int64 `json:"tenantId"`
+	CloudAccountId string `json:"cloudAccountId"`
+	ResourceType string `json:"resourceType"`
+	Source string `json:"source"`
+	LocalRegion string `json:"-"`
+	RawAssetInfo
+}
+
+
+// RawAssetInfo
+type RawAssetInfo struct {
+	RawId string `json:"rawId"`
+	RawIdShow string `json:"rawIdShow"`
+	Name string `json:"name"`
+	CreateTime time.Time `json:"createTime"`
+	AssetVersion string `json:"assetVersion"`
+}
+
+
+// Region
+type Region struct {
+	RegionId string `json:"regionId" bson:"regionId"`
+	RegionName string `json:"regionName" bson:"regionName"`
+}
+
+
+// CrtInfo
+type CrtInfo struct {
+	Expiration time.Time `json:"expiration" bson:"expiration"`
+	Expired bool `json:"expired" bson:"expired"`
+}
+
+

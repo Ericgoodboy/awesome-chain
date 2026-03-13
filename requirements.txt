@@ -1,0 +1,21 @@
+# Core LangChain dependencies
+langchain
+langchain-openai
+langchain-community
+langgraph
+langchain-anthropic
+
+# Additional dependencies
+python-dotenv
+pydantic
+aiofiles
+
+# Azure SDK dependencies
+azure-identity
+azure-mgmt-storage
+azure-mgmt-resource
+
+# Web tools dependencies
+requests
+beautifulsoup4
+ddgs
