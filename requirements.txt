@@ -4,6 +4,7 @@ langchain-openai
 langchain-community
 langgraph
 langchain-anthropic
+langchain_classic
 
 # Additional dependencies
 python-dotenv
